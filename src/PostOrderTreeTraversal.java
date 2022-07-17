@@ -23,6 +23,12 @@ public class PostOrderTreeTraversal {
         rec(root.right, list);
         list.add(root.val);
     }
+    public static ArrayList<Integer> postOrderTraversal(TreeNode root){
+        ArrayList<Integer> list = new ArrayList<>();
+
+        rec(root, list);
+        return list;
+    }
 
     public static void main(String[] args) {
 
